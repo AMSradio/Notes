@@ -24,7 +24,7 @@
     another example is to create a file ("touch test.java")
 ## git checkout
     discards your changes if you don't want to commit
-## git commit -A
+## git commit -a
     this will commit all changes
 ## git clone
     you can clone files from a repo with this
@@ -84,3 +84,32 @@
     tells you what python version you are running
 ## jupyter notebook
     runs a jupyter notebook for you
+### Navigate to your fork
+cd myfork
+### check current remote connections
+git remote -v
+### add upstream connection
+git remote add upstream oregoncurriculumlink
+### check that remote connection was added correctly
+git remote -v
+### pull down new content from the upstream
+git pull upstream master
+### navigate to the original curriculum repo
+cd ../uofo_virt......
+### pull down new content from the original curriculum repo
+git pull origin master
+### list all discoverable python environments in GIT BASH
+conda info --envs
+## Activate Python envioronment
+conda activate PythonData
+    "PythonData" is just what the name is for class
+## Deactivate a Python environment
+conda deactivate
+next, type and run - conda env remove --<env_name>
+## Navigation tip if you get stuck in a prompt
+click the up arrow and it will take you back to the last command
+## to add your Python environment to your Juypyter notebook
+first start your virtual environment it will be in () before your command prompt
+type in >> python -m ipykernel install --user --name PythonData <<
+--user and --name are literal
+PythonData is just the example of the environment I named, type in the name of the environment you are in
